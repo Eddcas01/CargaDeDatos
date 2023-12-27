@@ -1,0 +1,30 @@
+<section>
+  <div class="flex flex-col justify-center items-center">
+    <form action="">
+      <label
+        class="block text-xl font-medium text-gray-900 mb-6 dark:text-white"
+        for="user_avatar"
+        >Carga de configuración</label
+      >
+      <input
+        class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+        aria-describedby="Archivos"
+        id="NombreArchivos"
+        type="file"
+        (change)="onFileChange($event)"
+      />
+      <div
+        class="mt-1 text-sm text-gray-500 dark:text-gray-300"
+        id="DescripcionArchivos"
+      >
+        Carga de configuraciones MAX/MIN SKU
+      </div>
+      <button
+      (click)="convertToJSON()"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-5 rounded"
+      >
+        Cargar Datos
+      </button>
+    </form>
+  </div>
+</section>
